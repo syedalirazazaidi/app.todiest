@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 import {
   Sheet,
@@ -9,12 +9,12 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 
 export function Sidebar() {
   return (
-    <Sheet>
-      <SheetTrigger asChild>
+    <Sheet defaultOpen>
+      <SheetTrigger  asChild>
         <Button variant="outline">Open</Button>
       </SheetTrigger>
       <SheetContent>
@@ -26,16 +26,16 @@ export function Sidebar() {
         </SheetHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
-           <p>developer</p>
+            <p>developer</p>
           </div>
-         <p>developer 2</p>
-          </div>
+          <p>developer 2</p>
+        </div>
         <SheetFooter>
           <SheetClose asChild>
             <Button type="submit">Save changes</Button>
           </SheetClose>
         </SheetFooter>
       </SheetContent>
-    </Sheet>
-  )
+    </Sheet> 
+  );
 }
