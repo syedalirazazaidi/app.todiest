@@ -10,32 +10,35 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Link from "next/link";
 
 export function Sidebar() {
   return (
     <Sheet defaultOpen>
-      <SheetTrigger  asChild>
+      <SheetTrigger asChild>
         <Button variant="outline">Open</Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className=" w-72">
         <SheetHeader>
           <SheetTitle>Edit profile</SheetTitle>
           <SheetDescription>
             Make changes to your profile here. Click save when you're done.
           </SheetDescription>
         </SheetHeader>
-        <div className="grid gap-4 py-4">
+        <div className="grid gap-4 py-4 ">
           <div className="grid grid-cols-4 items-center gap-4">
-            <p>developer</p>
+            <Link href="/addtask">Add task</Link>
           </div>
-          <p>developer 2</p>
+          <div>
+            <Link href="/filterandlabels">Dashboard</Link>
+          </div>
         </div>
         <SheetFooter>
-          <SheetClose asChild>
+          {/* <SheetClose asChild>
             <Button type="submit">Save changes</Button>
-          </SheetClose>
+          </SheetClose> */}
         </SheetFooter>
       </SheetContent>
-    </Sheet> 
+    </Sheet>
   );
 }
