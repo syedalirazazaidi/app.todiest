@@ -25,9 +25,11 @@ export function Sidebar() {
       </SheetTrigger> */}
       <SheetContent className=" w-[240px]">
         <SheetHeader>
-          <SheetTitle className="flex gap-1 items-center">
-            
-           <Add  color="#ffffff" className="  size-6 bg-[#A81F00] rounded-full" />
+          <SheetTitle className="flex gap-3 items-center">
+            <Add
+              color="#ffffff"
+              className="  size-6 bg-[#A81F00] rounded-full"
+            />
             <p className="text-[#A81F00] text-[17px]"> Add task</p>
           </SheetTitle>
         </SheetHeader>
