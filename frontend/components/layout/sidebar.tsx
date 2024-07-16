@@ -13,8 +13,11 @@ import {
 import Link from "next/link";
 import Dashboard from "../dashboard-nav";
 import { navItems } from "@/constants/data";
+import { Icons } from "../icons";
 
 export function Sidebar() {
+  const Add = Icons["plus"];
+
   return (
     <Sheet defaultOpen>
       <SheetTrigger asChild>
@@ -22,7 +25,10 @@ export function Sidebar() {
       </SheetTrigger>
       <SheetContent className=" w-72">
         <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
+          <SheetTitle className="flex gap-1 items-center">
+            {" "}
+            <Add className={` size-5`} /> Add task
+          </SheetTitle>
         </SheetHeader>
         <div className="grid gap-4 py-4 ">
           <Dashboard navlink={navItems} />

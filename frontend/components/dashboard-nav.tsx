@@ -15,11 +15,11 @@ export default function Dashboard({ navlink }: NAVLINK) {
         <div key={index}>
           <Link
             href={`/${href}`}
-            className="flex space-x-2 space-y-1 text-[13px]"
+            className="flex flex-row items-center justify-start gap-1 py-2 text-[13px] "
           >
-            <Icon className={`ml-3 size-5`} />
+            <Icon className={`size-5`} />
 
-            <p className="flex flex-col">{title}</p>
+            <p className="text-center">{title}</p>
           </Link>
         </div>
       );

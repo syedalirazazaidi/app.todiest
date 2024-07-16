@@ -6,6 +6,6 @@ export interface NavItem {
   disabled?: boolean;
   external?: boolean;
   label?: string;
-  description?: string;
+  description: string;
   icon: keyof typeof Icons;
 }
