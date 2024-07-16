@@ -11,8 +11,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
+import Dashboard from "../dashboard-nav";
+import { navItems } from "@/constants/data";
 
 export function Sidebar() {
+  
   return (
     <Sheet defaultOpen>
       <SheetTrigger asChild>
@@ -26,12 +29,13 @@ export function Sidebar() {
           </SheetDescription>
         </SheetHeader>
         <div className="grid gap-4 py-4 ">
-          <div className="grid grid-cols-4 items-center gap-4">
+          <Dashboard navlink={navItems}/>
+          {/* <div className="grid grid-cols-4 items-center gap-4">
             <Link href="/addtask">Add task</Link>
           </div>
           <div>
             <Link href="/filterandlabels">Dashboard</Link>
-          </div>
+          </div> */}
         </div>
         <SheetFooter>
           {/* <SheetClose asChild>
