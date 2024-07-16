@@ -2,6 +2,13 @@ import { NavItem } from "@/types";
 
 export const navItems: NavItem[] = [
   {
+    title: "Search",
+    href: "/search",
+    icon: "search",
+    label: "search",
+    description: "search",
+  },
+  {
     title: "Inbox",
     href: "/inbox",
     icon: "inbox",
@@ -19,16 +26,16 @@ export const navItems: NavItem[] = [
   {
     title: "Upcoming",
     href: "/upcoming",
-    icon: "upcoming",
+    icon: "calender",
     label: "upcoming",
-    description: "/today",
+    description: "/upcoming",
   },
 
   {
     title: "Filters & Lables",
     href: "/filterandlabels",
-    icon: "filterandlabels",
+    icon: "filterandlabel",
     label: "filterandlabels",
-    description: "/today",
+    description: "/filter and label",
   },
 ];

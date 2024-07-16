@@ -1,3 +1,5 @@
+import { Icons } from "@/components/icons";
+
 export interface NavItem {
   title: string;
   href?: string;
@@ -5,5 +7,5 @@ export interface NavItem {
   external?: boolean;
   label?: string;
   description?: string;
-  icon?: string;
+  icon: keyof typeof Icons;
 }
