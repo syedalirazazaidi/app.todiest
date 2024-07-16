@@ -17,9 +17,8 @@ export default function Dashboard({ navlink }: NAVLINK) {
             href={`/${href}`}
             className="flex flex-row items-center justify-start gap-1 py-2 text-[13px] "
           >
-            <Icon className={`size-5`} />
-
-            <p className="text-center">{title}</p>
+            <Icon className={`size-5`} color="#6C6C6C" />
+            <p className="text-[#202020]">{title}</p>
           </Link>
         </div>
       );
