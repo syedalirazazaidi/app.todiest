@@ -11,9 +11,9 @@ export default function page() {
       </h1>
       <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
 
-      <p>
-        <span className="w-5 h-5 rounded-full bg-red-900 border-1 border-amber-400	 inline-block"></span>
-        convallis, lorem enim condimentum mauris, eu dictum enim sapien eget
+      <p className="flex items-center gap-1">
+        <span className="w-5 h-5 rounded-full bg-amber-100 border-[2px] border-amber-600 inline-block"></span>
+        convallis, lorem enim condimentum mauris,
       </p>
     </div>
   );
